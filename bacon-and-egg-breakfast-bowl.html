@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Bowl - Eats</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.png" alt="Eats Logo" id="nav-logo">
+            </a>
+            <a href="index.html" class="active">Home</a>
+            <a href="recipes.html">Recipes</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-content">
+                <img src="assets/images/breakfast-bowl.jpg" alt="Bacon and Egg Breakfast Bowl" class="hero-image">
+                <h1 class="recipe-title">Bacon and Egg Breakfast Bowl</h1>
+                <p class="recipe-cuisine">American</p>
+                <p class="recipe-type">Breakfast</p>
+                <p class="recipe-time">25 minutes</p>
+                <div class="star-rating">
+                    <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                    <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                    <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                    <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                    <span class="star-icon"><img src="assets/images/icon-star-half.png" alt="Half Star"></span>
+                    <span class="rating-count">4.5 (2 reviews)</span>
+                </div>
+                <p class="recipe-author">By Dandre Kennedy</p>
+                <p class="recipe-description">A hearty breakfast bowl packed with crispy bacon, perfectly scrambled eggs, and fresh vegetables</p>
+            </div>
+
+            <div class="ingredients-container">
+                <h2>Ingredients</h2>
+                <ul class="ingredients-list">
+                    <li>4 slices of bacon</li>
+                    <li>4 large eggs</li>
+                    <li>1 cup cooked quinoa</li>
+                    <li>1/2 cup cherry tomatoes, halved</li>
+                    <li>1/2 avocado, sliced</li>
+                    <li>Salt and pepper to taste</li>
+                    <li>Fresh parsley for garnish (optional)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="directions-section">
+            <h2>Directions</h2>
+            <ol class="directions-list">
+                <li id="step-1">
+                    <h3>Step 1</h3>
+                    <p>In a large skillet, cook the bacon over medium heat until crispy. Remove the bacon and set it on a paper towel-lined plate to drain excess grease. Once cooled, crumble the bacon into bite-sized pieces.</p>
+                </li>
+
+                <li id="step-2">
+                    <h3>Step 2</h3>
+                    <p>In the same skillet, crack the eggs and scramble them until fully cooked. Season with salt and pepper to taste. Remove the scrambled eggs from the skillet and set aside.</p>
+                </li>
+
+                <li id="step-3">
+                    <h3>Step 3</h3>
+                    <p>To assemble the breakfast bowl, start with a base of cooked quinoa. Top with scrambled eggs, crumbled bacon, cherry tomatoes, and avocado slices.</p>
+                </li>
+
+                <li id="step-4">
+                    <h3>Step 4</h3>
+                    <p>Garnish with fresh parsley if desired. Serve immediately and enjoy!</p>
+                </li>
+            </ol>
+        </section>
+        
+        <section class="recommendation-section">
+            <h2>Best Paired With</h2>
+            <article class="recipe-card">
+                <img src="assets/images/chicken-quesadilla.jpg" alt="Chicken Quesadilla" class ="recipe-card-image">
+                <h3 class="recipe-card-title">Chicken Quesadilla</h3>
+                <p class="recipe-card-description">A delicious Mexican dish made with seasoned chicken, melted cheese, and fresh vegetables in a crispy tortilla shell</p>
+                <a href="chicken-quesadilla.html" class="recipe-card-btn">View Recipe</a>
+            </article>
+
+            <article class="recipe-card">
+                <img src="assets/images/kimchi-fried-rice.jpg" alt="Kimchi Fried Rice" class ="recipe-card-image">
+                <h3 class="recipe-card-title">Kimchi Fried Rice</h3>
+                <p class="recipe-card-description">A flavorful Korean dish made with seasoned rice, kimchi, and a variety of vegetables</p>
+                <a href="kimchi-fried-rice.html" class="recipe-card-btn">View Recipe</a>
+            </article>
+        </section>
+
+        <section class="ratings-section">
+            <div class="star-rating">
+                <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                <span class="star-icon"><img src="assets/images/icon-star-half.png" alt="Half Star"></span>
+                <span class="rating-count">4.5 (2 reviews)</span>
+            </div>
+
+            <label for="review-select">Sort by:</label>
+            <select id="review-select" name="review-select">
+                <option value="newest">Newest</option>
+                <option value="oldest">Oldest</option>
+                <option value="highest-rated">Highest Rated</option>
+                <option value="lowest-rated">Lowest Rated</option>
+            </select>
+
+            <label for="star-select">Filter by Star Rating:</label>
+            <select id="star-select" name="star-select">
+                <option value="5">5 Stars</option>
+                <option value="4">4 Stars</option>
+                <option value="3">3 Stars</option>
+                <option value="2">2 Stars</option>
+                <option value="1">1 Star</option>
+            </select>
+
+            <p>Clear Filter</p>
+
+            <div class="leave-review">
+                <h3>Leave a Review</h3>
+                <div class="star-rating">
+                    <span class="star-icon"><img src="assets/images/icon-star-empty.png" alt="Empty Star"></span>
+                    <span class="star-icon"><img src="assets/images/icon-star-empty.png" alt="Empty Star"></span>
+                    <span class="star-icon"><img src="assets/images/icon-star-empty.png" alt="Empty Star"></span>
+                    <span class="star-icon"><img src="assets/images/icon-star-empty.png" alt="Empty Star"></span>
+                    <span class="star-icon"><img src="assets/images/icon-star-empty.png" alt="Empty Star"></span>
+                </div>
+                <form class="review-form">
+                    <textarea id="review-textarea" name="review-textarea" rows="4" placeholder="Leave a review..."></textarea>
+                    <button type="submit" class="submit">Submit Review</button>
+                </form>
+            </div>
+
+            <div class="reviews-container">
+                <div class="review-card">
+                    <p class="reviewer-name">John Doe</p>
+                    <div class="star-rating">
+                        <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                        <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                        <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                        <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                        <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                    </div>
+                    <p class="review-text">This breakfast bowl was absolutely delicious! The bacon was crispy, the eggs were perfectly scrambled, and the fresh vegetables added a nice touch. Highly recommend!</p>
+                </div>
+
+                <div class="review-card">
+                    <p class="reviewer-name">Tammy Boris</p>
+                    <div class="star-rating">
+                        <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                        <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                        <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                        <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
+                        <span class="star-icon"><img src="assets/images/icon-star-empty.png" alt="Empty Star"></span>
+                    </div>
+                    <p class="review-text">I really enjoyed this breakfast bowl. The combination of flavors was perfect and the presentation was beautiful. Will definitely make this again!</p>
+                </div>
+        </section>
+    </main>
+
+    <aside>
+        <h2>Directions</h2>
+        <a href="#step-1">Step 1: Cook the bacon</a>
+        <a href="#step-2">Step 2: Scramble the eggs</a>
+        <a href="#step-3">Step 3: Assemble the bowl</a>
+        <a href="#step-4">Step 4: Garnish and serve</a>
+
+        <h3>Related Recipes</h2>
+        <article class="recipe-card">
+            <img src="assets/images/chicken-quesadilla.jpg" alt="Chicken Quesadilla" class ="recipe-card-image">
+            <h3 class="recipe-card-title">Chicken Quesadilla</h3>
+            <p class="recipe-card-description">A delicious Mexican dish made with seasoned chicken, melted cheese, and fresh vegetables in a crispy tortilla shell</p>
+            <a href="chicken-quesadilla.html" class="recipe-card-btn">View Recipe</a>
+        </article>
+
+        <article class="recipe-card">
+            <img src="assets/images/kimchi-fried-rice.jpg" alt="Kimchi Fried Rice" class ="recipe-card-image">
+            <h3 class="recipe-card-title">Kimchi Fried Rice</h3>
+            <p class="recipe-card-description">A flavorful Korean dish made with seasoned rice, kimchi, and a variety of vegetables</p>
+            <a href="kimchi-fried-rice.html" class="recipe-card-btn">View Recipe</a>
+        </article>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Eats. All rights reserved.</p>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/icon-instagram.png" alt="Instagram Icon" class="footer-icon">
+        </a>
+        <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/icon-twitter.png" alt="Twitter Icon" class="footer-icon">
+        </a>
+        <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+            <img src="assets/images/icon-youtube.png" alt="YouTube Icon" class="footer-icon">
+        </a>
+    </footer>
+</body>
+</html>
