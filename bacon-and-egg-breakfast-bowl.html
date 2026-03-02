@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
     <title>Breakfast Bowl - Eats</title>
 </head>
 <body>
     <header>
         <nav>
             <a href="index.html" class="logo-link">
-                <img src="assets/images/logo.png" alt="Eats Logo" id="nav-logo">
+                <img src="assets/images/logo.jpg" alt="Eats Logo" id="nav-logo">
             </a>
             <a href="index.html" class="active">Home</a>
             <a href="recipes.html">Recipes</a>
@@ -78,20 +79,31 @@
         
         <section class="recommendation-section">
             <h2>Best Paired With</h2>
-            <article class="recipe-card">
-                <img src="assets/images/chicken-quesadilla.jpg" alt="Chicken Quesadilla" class ="recipe-card-image">
-                <h3 class="recipe-card-title">Chicken Quesadilla</h3>
-                <p class="recipe-card-description">A delicious Mexican dish made with seasoned chicken, melted cheese, and fresh vegetables in a crispy tortilla shell</p>
-                <a href="chicken-quesadilla.html" class="recipe-card-btn">View Recipe</a>
-            </article>
+            
+            <div class="recipe-grid">
+                
+                <article class="recipe-card">
+                    <img src="assets/images/chicken-quesadilla.jpg" alt="Chicken Quesadilla" class ="recipe-card-image">
+                    
+                    <div class="card-content">
+                        <h3 class="recipe-card-title">Chicken Quesadilla</h3>
+                        <p class="recipe-card-description">A delicious Mexican dish made with seasoned chicken, melted cheese, and fresh vegetables in a crispy tortilla shell</p>
+                        <a href="chicken-quesadilla.html" class="recipe-card-btn">View Recipe</a>
+                    </div>
+                    </article>
 
-            <article class="recipe-card">
-                <img src="assets/images/kimchi-fried-rice.jpg" alt="Kimchi Fried Rice" class ="recipe-card-image">
-                <h3 class="recipe-card-title">Kimchi Fried Rice</h3>
-                <p class="recipe-card-description">A flavorful Korean dish made with seasoned rice, kimchi, and a variety of vegetables</p>
-                <a href="kimchi-fried-rice.html" class="recipe-card-btn">View Recipe</a>
-            </article>
-        </section>
+                <article class="recipe-card">
+                    <img src="assets/images/kimchi-fried-rice.jpg" alt="Kimchi Fried Rice" class ="recipe-card-image">
+                    
+                    <div class="card-content">
+                        <h3 class="recipe-card-title">Kimchi Fried Rice</h3>
+                        <p class="recipe-card-description">A flavorful Korean dish made with seasoned rice, kimchi, and a variety of vegetables</p>
+                        <a href="kimchi-fried-rice.html" class="recipe-card-btn">View Recipe</a>
+                    </div>
+                    </article>
+                
+            </div>
+            </section>
 
         <section class="ratings-section">
             <div class="star-rating">
@@ -150,7 +162,7 @@
                     <p class="review-text">This breakfast bowl was absolutely delicious! The bacon was crispy, the eggs were perfectly scrambled, and the fresh vegetables added a nice touch. Highly recommend!</p>
                 </div>
 
-                <div class="review-card">
+               <div class="review-card">
                     <p class="reviewer-name">Tammy Boris</p>
                     <div class="star-rating">
                         <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
@@ -161,7 +173,8 @@
                     </div>
                     <p class="review-text">I really enjoyed this breakfast bowl. The combination of flavors was perfect and the presentation was beautiful. Will definitely make this again!</p>
                 </div>
-        </section>
+                
+            </div> </section>
     </main>
 
     <aside>
@@ -171,19 +184,26 @@
         <a href="#step-3">Step 3: Assemble the bowl</a>
         <a href="#step-4">Step 4: Garnish and serve</a>
 
-        <h3>Related Recipes</h2>
+        <h2>Related Recipes</h2>
+        
         <article class="recipe-card">
             <img src="assets/images/chicken-quesadilla.jpg" alt="Chicken Quesadilla" class ="recipe-card-image">
-            <h3 class="recipe-card-title">Chicken Quesadilla</h3>
-            <p class="recipe-card-description">A delicious Mexican dish made with seasoned chicken, melted cheese, and fresh vegetables in a crispy tortilla shell</p>
-            <a href="chicken-quesadilla.html" class="recipe-card-btn">View Recipe</a>
+            
+            <div class="card-content">
+                <h3 class="recipe-card-title">Chicken Quesadilla</h3>
+                <p class="recipe-card-description">A delicious Mexican dish made with seasoned chicken, melted cheese, and fresh vegetables in a crispy tortilla shell</p>
+                <a href="chicken-quesadilla.html" class="recipe-card-btn">View Recipe</a>
+            </div>
         </article>
 
         <article class="recipe-card">
             <img src="assets/images/kimchi-fried-rice.jpg" alt="Kimchi Fried Rice" class ="recipe-card-image">
-            <h3 class="recipe-card-title">Kimchi Fried Rice</h3>
-            <p class="recipe-card-description">A flavorful Korean dish made with seasoned rice, kimchi, and a variety of vegetables</p>
-            <a href="kimchi-fried-rice.html" class="recipe-card-btn">View Recipe</a>
+            
+            <div class="card-content">
+                <h3 class="recipe-card-title">Kimchi Fried Rice</h3>
+                <p class="recipe-card-description">A flavorful Korean dish made with seasoned rice, kimchi, and a variety of vegetables</p>
+                <a href="kimchi-fried-rice.html" class="recipe-card-btn">View Recipe</a>
+            </div>
         </article>
     </aside>
 
