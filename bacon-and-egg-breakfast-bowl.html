@@ -23,9 +23,13 @@
                 <div class="hero-content">
                     <img src="assets/images/breakfast-bowl.jpg" alt="Bacon and Egg Breakfast Bowl" class="hero-image">
                     <h1 class="recipe-title">Bacon and Egg Breakfast Bowl</h1>
-                    <p class="recipe-cuisine">American</p>
-                    <p class="recipe-type">Breakfast</p>
-                    <p class="recipe-time">25 minutes</p>
+
+                    <div class="recipe-details">
+                        <p class="recipe-cuisine">American</p>
+                        <p class="recipe-type">Breakfast</p>
+                        <p class="recipe-time">25 minutes</p>
+                    </div>
+                    
                     <div class="star-rating">
                         <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
                         <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
@@ -34,6 +38,7 @@
                         <span class="star-icon"><img src="assets/images/icon-star-half.png" alt="Half Star"></span>
                         <span class="rating-count">4.5 (2 reviews)</span>
                     </div>
+                    
                     <p class="recipe-author">By Dandre Kennedy</p>
                     <p class="recipe-description">A hearty breakfast bowl packed with crispy bacon, perfectly scrambled eggs, and fresh vegetables</p>
                 </div>
@@ -106,6 +111,9 @@
                 </section>
 
             <section class="ratings-section">
+                
+                <h2>Reviews</h2>
+
                 <div class="star-rating">
                     <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
                     <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
@@ -115,24 +123,26 @@
                     <span class="rating-count">4.5 (2 reviews)</span>
                 </div>
 
-                <label for="review-select">Sort by:</label>
-                <select id="review-select" name="review-select">
-                    <option value="newest">Newest</option>
-                    <option value="oldest">Oldest</option>
-                    <option value="highest-rated">Highest Rated</option>
-                    <option value="lowest-rated">Lowest Rated</option>
-                </select>
+                <div class="review-filters">
+                    <label for="review-select">Sort by:</label>
+                    <select id="review-select" name="review-select">
+                        <option value="newest">Newest</option>
+                        <option value="oldest">Oldest</option>
+                        <option value="highest-rated">Highest Rated</option>
+                        <option value="lowest-rated">Lowest Rated</option>
+                    </select>
 
-                <label for="star-select">Filter by Star Rating:</label>
-                <select id="star-select" name="star-select">
-                    <option value="5">5 Stars</option>
-                    <option value="4">4 Stars</option>
-                    <option value="3">3 Stars</option>
-                    <option value="2">2 Stars</option>
-                    <option value="1">1 Star</option>
-                </select>
+                    <label for="star-select">Filter by Star Rating:</label>
+                    <select id="star-select" name="star-select">
+                        <option value="5">5 Stars</option>
+                        <option value="4">4 Stars</option>
+                        <option value="3">3 Stars</option>
+                        <option value="2">2 Stars</option>
+                        <option value="1">1 Star</option>
+                    </select>
 
-                <p>Clear Filter</p>
+                    <p>Clear Filter</p>
+                </div>
 
                 <div class="leave-review">
                     <h3>Leave a Review</h3>
@@ -144,12 +154,12 @@
                         <span class="star-icon"><img src="assets/images/icon-star-empty.png" alt="Empty Star"></span>
                     </div>
                     <form class="review-form">
-                        <textarea id="review-textarea" name="review-textarea" rows="4" placeholder="Leave a review..."></textarea>
-                        <button type="submit" class="submit">Submit Review</button>
+                        <textarea id="review-text-area" name="review-text-area" rows="4" placeholder="Leave a review..."></textarea>
+                        <button type="submit" class="submit">Submit</button>
                     </form>
                 </div>
 
-                <div class="reviews-container">
+                <div class="review-container">
                     <div class="review-card">
                         <p class="reviewer-name">John Doe</p>
                         <div class="star-rating">
@@ -162,7 +172,7 @@
                         <p class="review-text">This breakfast bowl was absolutely delicious! The bacon was crispy, the eggs were perfectly scrambled, and the fresh vegetables added a nice touch. Highly recommend!</p>
                     </div>
 
-                <div class="review-card">
+                    <div class="review-card">
                         <p class="reviewer-name">Tammy Boris</p>
                         <div class="star-rating">
                             <span class="star-icon"><img src="assets/images/icon-star-filled.png" alt="Filled Star"></span>
@@ -174,7 +184,8 @@
                         <p class="review-text">I really enjoyed this breakfast bowl. The combination of flavors was perfect and the presentation was beautiful. Will definitely make this again!</p>
                     </div>
                     
-                </div> </section>
+                </div>
+            </section>
         </main>
 
         <aside>

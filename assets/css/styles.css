@@ -2,6 +2,12 @@
     outline: 1px solid purple;
 }
 
+/*
+=============
+Global Styles
+=============
+*/
+
 :root {
     --dark-green: #283618;
     --light-green: #606C38;
@@ -33,6 +39,23 @@ body {
     padding: 0;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+/*
+================
+Component Styles
+================
+*/
 
 h1, h2, h3 {
     margin-top: 0;
@@ -70,16 +93,30 @@ nav a:hover, nav a.active {
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
-main {
-    max-width: 1200px;
-    margin: 2rem auto;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
+footer {
+    background-color: var(--nav-bg);
+    color: var(--nav-text);
     text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
 }
+
+.footer-icon {
+    width: 30px;
+    margin: 0 10px;
+    filter: brightness(0) invert(1); 
+    transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+    transform: scale(1.2);
+}
+
+/*
+=============
+Recipe Card Styles
+=============
+*/
 
 .recipe-grid {
     display: grid;
@@ -144,21 +181,132 @@ main {
     transform: scale(1.03);
 }
 
-footer {
-    background-color: var(--nav-bg);
-    color: var(--nav-text);
-    text-align: center;
-    padding: 2rem;
-    margin-top: 3rem;
+/* 
+=============================
+Individual recipe page styles
+=============================
+*/
+
+.hero-image {
+    width: auto;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.footer-icon {
-    width: 30px;
-    margin: 0 10px;
-    filter: brightness(0) invert(1); 
-    transition: transform 0.3s ease;
+.recipe-details {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
 }
 
-.footer-icon:hover {
-    transform: scale(1.2);
+.star-rating {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.star-icon img {
+    width: 25px;
+}
+
+.ingredients-container {
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-top: 2rem;
+}
+
+.ingredients-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.directions-section {
+    text-align: left;
+}
+
+.directions-list {
+    list-style: none;
+    padding-left: 1.5rem;
+}
+
+.recommendation-section > h2 {
+    text-align: left;
+}
+
+.ratings-section {
+    display: flex;
+    justify-content: left;
+    align-content: left;
+    flex-direction: column;
+    text-align: left;
+}
+
+.ratings-section > .star-rating {
+    justify-content: left;
+}
+
+.leave-review > .star-rating {
+    justify-content: left;
+}
+
+.review-filters > p {
+    display: inline-block;
+}
+
+.review-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#review-text-area {
+    width: 20%;
+    min-height: 50px;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-top: 1rem;
+}
+
+.reviews-container {
+    justify-content: left;
+    align-content: left;
+}
+
+.reviewer-name {
+    font-weight: bold;
+    margin-bottom: 0.25rem;
+}
+
+.review-card > .star-rating {
+    justify-content: left;
+    gap: 0.25rem;
+}
+
+.review-card > .star-rating > .star-icon img{
+    width: 15px;
+}
+/*ADD HOVER AND TRANSFORM FOR STAR RATING.
+CHANGE THE EMPTY STAR TO A FULL ONE*/
+
+
+/*
+===================
+Recipe page styles
+==================
+*/
+
+#search-input {
+    width: 90%;
+    border-radius: 8px;
+    border: 1px solid #ccc;
 }
