@@ -187,6 +187,20 @@ Individual recipe page styles
 =============================
 */
 
+.recipe-pages-layout {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: "sidebar content";
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+.recipe-content {
+    grid-area: content;
+}
+
 .hero-image {
     width: auto;
     height: 400px;
@@ -297,7 +311,6 @@ Individual recipe page styles
 }
 /*ADD HOVER AND TRANSFORM FOR STAR RATING.
 CHANGE THE EMPTY STAR TO A FULL ONE*/
-
 
 /*
 ===================
