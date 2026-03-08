@@ -125,24 +125,29 @@
                         </div>
 
                         <div class="review-filters">
-                            <label for="review-select">Sort by:</label>
-                            <select id="review-select" name="review-select">
-                                <option value="newest">Newest</option>
-                                <option value="oldest">Oldest</option>
-                                <option value="highest-rated">Highest Rated</option>
-                                <option value="lowest-rated">Lowest Rated</option>
-                            </select>
 
-                            <label for="star-select">Filter by Star Rating:</label>
-                            <select id="star-select" name="star-select">
-                                <option value="5">5 Stars</option>
-                                <option value="4">4 Stars</option>
-                                <option value="3">3 Stars</option>
-                                <option value="2">2 Stars</option>
-                                <option value="1">1 Star</option>
-                            </select>
+                            <div class="filter-group">
+                                <label for="review-select">Sort by:</label>
+                                <select id="review-select" name="review-select">
+                                    <option value="newest">Newest</option>
+                                    <option value="oldest">Oldest</option>
+                                    <option value="highest-rated">Highest Rated</option>
+                                    <option value="lowest-rated">Lowest Rated</option>
+                                </select>
+                            </div>
 
-                            <p>Clear Filter</p>
+                            <div class="filter-group">
+                                <label for="star-select">Rating:</label>
+                                <select id="star-select" name="star-select">
+                                    <option value="5">5 Stars</option>
+                                    <option value="4">4 Stars</option>
+                                    <option value="3">3 Stars</option>
+                                    <option value="2">2 Stars</option>
+                                    <option value="1">1 Star</option>
+                                </select>
+                            </div>
+
+                            <button class="clear-filter">Clear</button>
                         </div>
 
                         <div class="leave-review">
@@ -190,35 +195,14 @@
                 </div>
 
                 <aside>
-                    <div class="directions-links">
-                        <h2>Directions</h2>
-                        <a href="#step-1">Step 1: Cook the bacon</a>
-                        <a href="#step-2">Step 2: Scramble the eggs</a>
-                        <a href="#step-3">Step 3: Assemble the bowl</a>
-                        <a href="#step-4">Step 4: Garnish and serve</a>
-                    </div>
-
-                    <div class="recommendation-section">
-                        <h2>Related Recipes</h2>
-                        <article class="recipe-card">
-                            <img src="assets/images/chicken-quesadilla.jpg" alt="Chicken Quesadilla" class ="recipe-card-image">
-                            
-                            <div class="card-content">
-                                <h3 class="recipe-card-title">Chicken Quesadilla</h3>
-                                <p class="recipe-card-description">A delicious Mexican dish made with seasoned chicken, melted cheese, and fresh vegetables in a crispy tortilla shell</p>
-                                <a href="chicken-quesadilla.html" class="recipe-card-btn">View Recipe</a>
-                            </div>
-                        </article>
-
-                        <article class="recipe-card">
-                            <img src="assets/images/kimchi-fried-rice.jpg" alt="Kimchi Fried Rice" class ="recipe-card-image">
-                            
-                            <div class="card-content">
-                                <h3 class="recipe-card-title">Kimchi Fried Rice</h3>
-                                <p class="recipe-card-description">A flavorful Korean dish made with seasoned rice, kimchi, and a variety of vegetables</p>
-                                <a href="kimchi-fried-rice.html" class="recipe-card-btn">View Recipe</a>
-                            </div>
-                        </article>
+                    <div class="steps-links">
+                        <h2>Jump to Step</h2>
+                        <ol>
+                            <li><a href="#step-1">Cook the bacon</a></li>
+                            <li><a href="#step-2">Scramble the eggs</a></li>
+                            <li><a href="#step-3">Assemble the bowl</a></li>
+                            <li><a href="#step-4">Garnish and serve</a></li>
+                        </ol>
                     </div>
                 </aside>
             </div>
