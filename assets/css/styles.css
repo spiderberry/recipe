@@ -49,6 +49,7 @@ main {
     align-content: center;
     flex-direction: column;
     text-align: center;
+    gap: 1rem;
 }
 
 /*
@@ -110,6 +111,25 @@ footer {
 
 .footer-icon:hover {
     transform: scale(1.2);
+}
+
+button {
+    padding: 0.5rem;
+    background-color: var(--btn-bg);
+    color: var(--off-white);
+    border: none;
+    border-radius: 16px;
+    font-weight: bold;
+}
+
+.btn {
+    padding: 0.5rem;
+    background-color: var(--btn-bg);
+    color: var(--off-white);
+    border: none;
+    border-radius: 16px;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 /*
@@ -352,9 +372,12 @@ Recipe page styles
 
 #search-input {
     width: 90%;
-    border-radius: 8px;
+    border-radius: 15px;
     border: 1px solid #ccc;
+    padding: 0.4rem;
 }
+
+
 
 /*
 ===================
@@ -367,6 +390,11 @@ Contact page styles
     flex-direction: column;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
+}
+
+#contact-logo {
+    width: 100%;
+    height: auto;
 }
 
 .contact-info {
