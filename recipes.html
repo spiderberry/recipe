@@ -19,8 +19,41 @@
         </header>
 
         <main>
-            <form class="search-bar">
+            <form class="search-filters">
                 <input type="text" id="search-input" placeholder="Search for recipes...">
+
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="cuisine-filter">Cuisine:</label>
+                        <select id="cuisine-filter">
+                            <option value="all">All</option>
+                            <option value="american">American</option>
+                            <option value="mexican">Mexican</option>
+                            <option value="korean">Korean</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="meal-filter">Meal:</label>
+                        <select id="meal-filter">
+                            <option value="all">All</option>
+                            <option value="breakfast">Breakfast</option>
+                            <option value="lunch">Lunch</option>
+                            <option value="dinner">Dinner</option>
+                        </select>
+                    </div>
+
+                    <div class="filter-group">
+                        <label for="cook-time-filter">Time:</label>
+                        <select id="cook-time-filter">
+                            <option value="all">All</option>
+                            <option value="quick">&lt; 30 minutes</option>
+                            <option value="medium">30-60 minutes</option>
+                            <option value="slow">60 minutes+</option>
+                        </select>
+                    </div>
+                </div>
+
                 <button type="submit">Search</button>
             </form>
 

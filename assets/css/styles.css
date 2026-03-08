@@ -302,7 +302,7 @@ aside {
 }
 
 
-.review-filters {
+.filters {
     display: flex;
     gap: 1rem;
 }
@@ -370,14 +370,29 @@ Recipe page styles
 ==================
 */
 
+.search-filters {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
 #search-input {
-    width: 90%;
+    width: 50%;
     border-radius: 15px;
     border: 1px solid #ccc;
     padding: 0.4rem;
 }
 
-
+select {
+    padding: 0.4rem;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
 
 /*
 ===================
