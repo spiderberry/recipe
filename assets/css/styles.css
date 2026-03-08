@@ -298,8 +298,8 @@ aside {
     gap: 1rem;
 }
 
-.ratings-section > .star-rating {
-    justify-content: left;
+.ratings-section > .rating-display {
+    text-align: left;
 }
 
 
@@ -314,8 +314,8 @@ aside {
     gap: 0.5rem;
 }
 
-.leave-review > .star-rating {
-    justify-content: left;
+.leave-review .rating {
+    font-size: 1.4rem;
 }
 
 .review-container {
@@ -354,16 +354,37 @@ aside {
     font-weight: bold;
 }
 
-.review-card > .star-rating {
-    justify-content: left;
-    gap: 0.25rem;
+.review-card > .rating-display {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
 }
 
-.review-card > .star-rating > .star-icon img{
-    width: 15px;
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
 }
-/*ADD HOVER AND TRANSFORM FOR STAR RATING.
-CHANGE THE EMPTY STAR TO A FULL ONE*/
+
+.rating > span {
+    display: inline-block;
+    position: relative;
+    width: 1.1em;
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   content: "\2605";
+   position: absolute;
+}
+
+.rating-display {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    letter-spacing: 0.15rem;
+}
+
+.rating-count {
+    letter-spacing: normal;
+}
 
 /*
 ===================
