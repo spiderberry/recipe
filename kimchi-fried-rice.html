@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>Kimchi Fried Rice - Eats</title>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <a href="index.html" class="logo-link">
+                    <img src="assets/images/logo.png" alt="Eats Logo" id="nav-logo">
+                </a>
+                <a href="index.html">Home</a>
+                <a href="recipes.html" class="active">Recipes</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="recipe-pages-layout">
+                <div class="recipe-content">
+                    <section class="hero-section">
+                        <img src="assets/images/kimchi-fried-rice.jpg" alt="Kimchi Fried Rice" class="hero-image">
+                        <h1 class="recipe-title">Kimchi Fried Rice</h1>
+
+                        <div class="recipe-details">
+                            <p class="recipe-cuisine">Korean</p>
+                            <p class="recipe-type">Dinner</p>
+                            <p class="recipe-time">20 minutes</p>
+                        </div>
+
+                        <div class="rating-display">
+                            ★★★★★
+                            <span class="rating-count">5 (1 review)</span>
+                        </div>
+
+                        <p class="recipe-author">By Daviss Le</p>
+                        <p class="recipe-description">A flavorful Korean dish made with seasoned rice, kimchi, and a variety of vegetables.</p>
+
+                        <div class="ingredients-container">
+                            <h2>Ingredients</h2>
+                            <ul class="ingredients-list">
+                                <li>3 cups cooked white rice (preferably day-old)</li>
+                                <li>1 cup well-fermented kimchi, chopped</li>
+                                <li>2 tbsp kimchi juice</li>
+                                <li>1/2 cup mixed vegetables (carrots, corn, green beans)</li>
+                                <li>1 tbsp sesame oil</li>
+                                <li>1 large egg</li>
+                                <li>Toasted sesame seeds and sliced green onions for garnish</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section class="directions-section">
+                        <h2>Directions</h2>
+                        <ol class="directions-list">
+                            <li id="step-1">
+                                <h3>Step 1</h3>
+                                <p>Heat a wok or large skillet over medium-high heat. Add a little oil and sauté the mixed vegetables and chopped kimchi for about 3 minutes until fragrant.</p>
+                            </li>
+
+                            <li id="step-2">
+                                <h3>Step 2</h3>
+                                <p>Add the day-old rice and kimchi juice to the pan. Use a spatula to break up the rice and toss everything together thoroughly.</p>
+                            </li>
+
+                            <li id="step-3">
+                                <h3>Step 3</h3>
+                                <p>Continue to stir-fry for another 4-5 minutes until the rice is heated through and slightly crispy at the bottom. Turn off the heat and stir in the sesame oil.</p>
+                            </li>
+
+                            <li id="step-4">
+                                <h3>Step 4</h3>
+                                <p>In a separate small pan, fry the egg sunny-side up. Serve the fried rice in a bowl, top with the fried egg, and garnish with sesame seeds and green onions.</p>
+                            </li>
+                        </ol>
+                    </section>
+                    
+                    <section class="recommendation-section">
+                        <h2>Best Paired With</h2>
+                        
+                        <div class="recipe-grid">
+                            <article class="recipe-card">
+                                <img src="assets/images/breakfast-bowl.jpg" alt="Breakfast Bowl" class ="recipe-card-image">
+                                <div class="card-content">
+                                    <h3 class="recipe-card-title">Bacon and Egg Breakfast Bowl</h3>
+                                    <p class="recipe-card-description">A hearty breakfast bowl packed with crispy bacon, perfectly scrambled eggs, and fresh vegetables</p>
+                                    <a href="bacon-and-egg-breakfast-bowl.html" class="recipe-card-btn">View Recipe</a>
+                                </div>
+                            </article>
+
+                            <article class="recipe-card">
+                                <img src="assets/images/chicken-quesadilla.jpg" alt="Chicken Quesadilla" class ="recipe-card-image">
+                                <div class="card-content">
+                                    <h3 class="recipe-card-title">Chicken Quesadilla</h3>
+                                    <p class="recipe-card-description">A delicious Mexican dish made with seasoned chicken, melted cheese, and fresh vegetables in a crispy tortilla shell</p>
+                                    <a href="chicken-quesadilla.html" class="recipe-card-btn">View Recipe</a>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                    <section class="ratings-section">
+                        
+                        <h2>Reviews</h2>
+
+                        <div class="rating-display">
+                            ★★★★★
+                            <span class="rating-count">5 (1 review)</span>
+                        </div>
+
+                        <div class="filters">
+
+                            <div class="filter-group">
+                                <label for="review-select">Sort by:</label>
+                                <select id="review-select" name="review-select">
+                                    <option value="newest">Newest</option>
+                                    <option value="oldest">Oldest</option>
+                                    <option value="highest-rated">Highest Rated</option>
+                                    <option value="lowest-rated">Lowest Rated</option>
+                                </select>
+                            </div>
+
+                            <div class="filter-group">
+                                <label for="star-select">Rating:</label>
+                                <select id="star-select" name="star-select">
+                                    <option value="5">All</option>
+                                    <option value="5">5 Stars</option>
+                                    <option value="4">4 Stars</option>
+                                    <option value="3">3 Stars</option>
+                                    <option value="2">2 Stars</option>
+                                    <option value="1">1 Star</option>
+                                </select>
+                            </div>
+
+                            <button class="clear-filter">Clear</button>
+                        </div>
+
+                        <div class="leave-review">
+                            <h3>Leave a Review</h3>
+                            <div class="rating">
+                                <span>☆</span>
+                                <span>☆</span>
+                                <span>☆</span>
+                                <span>☆</span>
+                                <span>☆</span>
+                            </div>
+
+                            <form class="review-form" aria-label="Leave a review form">
+                                <textarea id="review-text-area" name="review-text-area" rows="4" placeholder="Leave a review..."></textarea>
+                                <button type="submit" class="submit">Submit</button>
+                            </form>
+                        </div>
+
+                        <div class="review-container">
+                            <div class="review-card">
+                                <p class="reviewer-name">Samantha Brunson</p>
+                                <div class="rating-display">★★★★★</div>
+                                <p class="review-text">The only way to make Kimchi fried rice!</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </main>
+
+        <aside>
+            <h2>Directions</h2>
+            <a href="#step-1">Step 1: Sauté kimchi</a>
+            <a href="#step-2">Step 2: Add rice</a>
+            <a href="#step-3">Step 3: Stir-fry</a>
+            <a href="#step-4">Step 4: Fry egg & serve</a>
+
+            <h2>Related Recipes</h2>
+            
+            <article class="recipe-card">
+                <img src="assets/images/breakfast-bowl.jpg" alt="Breakfast Bowl" class ="recipe-card-image">
+                <div class="card-content">
+                    <h3 class="recipe-card-title">Bacon and Egg Breakfast Bowl</h3>
+                    <p class="recipe-card-description">A hearty breakfast bowl packed with crispy bacon, perfectly scrambled eggs, and fresh vegetables</p>
+                    <a href="bacon-and-egg-breakfast-bowl.html" class="recipe-card-btn">View Recipe</a>
+                </div>
+            </article>
+
+            <article class="recipe-card">
+                <img src="assets/images/chicken-quesadilla.jpg" alt="Chicken Quesadilla" class ="recipe-card-image">
+                <div class="card-content">
+                    <h3 class="recipe-card-title">Chicken Quesadilla</h3>
+                    <p class="recipe-card-description">A delicious Mexican dish made with seasoned chicken, melted cheese, and fresh vegetables in a crispy tortilla shell</p>
+                    <a href="chicken-quesadilla.html" class="recipe-card-btn">View Recipe</a>
+                </div>
+            </article>
+        </aside>
+
+        <footer>
+            <p>&copy; 2026 Eats. All rights reserved.</p>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/icon-instagram.png" alt="Instagram Icon" class="footer-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/icon-twitter.png" alt="Twitter Icon" class="footer-icon">
+            </a>
+            <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+                <img src="assets/images/icon-youtube.png" alt="YouTube Icon" class="footer-icon">
+            </a>
+        </footer>
+    </body>
+</html>
