@@ -1,11 +1,7 @@
-/* * {
-    outline: 1px solid purple;
-} */
-
 /*
-=============
-Global Styles
-=============
+=================
+Theme
+=================
 */
 
 :root {
@@ -42,6 +38,12 @@ body {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
+/*
+=================
+Page Layout
+=================
+*/
+
 main {
     max-width: 1200px;
     margin: 2rem auto;
@@ -55,9 +57,9 @@ main {
 }
 
 /*
-================
-Component Styles
-================
+=================
+Base Elements
+=================
 */
 
 h1, h2, h3 {
@@ -66,8 +68,14 @@ h1, h2, h3 {
 
 header {
     background-color: var(--nav-bg);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+/*
+=================
+Navigation
+=================
+*/
 
 nav {
     display: flex;
@@ -93,8 +101,14 @@ nav a:hover, nav a.active {
 #nav-logo {
     height: 60px;
     border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+
+/*
+=================
+Footer
+=================
+*/
 
 footer {
     background-color: var(--nav-bg);
@@ -107,7 +121,7 @@ footer {
 .footer-icon {
     width: 30px;
     margin: 0 10px;
-    filter: brightness(0) invert(1); 
+    filter: brightness(0) invert(1);
     transition: transform 0.3s ease;
 }
 
@@ -119,6 +133,12 @@ footer a {
     text-decoration: none;
     display: inline-block;
 }
+
+/*
+=================
+Buttons / Links
+=================
+*/
 
 button {
     padding: 0.5rem;
@@ -141,9 +161,9 @@ button {
 }
 
 /*
-=============
-Recipe Card Styles
-=============
+=================
+Recipe Cards
+=================
 */
 
 .recipe-grid {
@@ -157,7 +177,7 @@ Recipe Card Styles
     background-color: var(--card-bg);
     border-radius: 15px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -165,7 +185,7 @@ Recipe Card Styles
 
 .recipe-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .recipe-card-image {
@@ -209,10 +229,10 @@ Recipe Card Styles
     transform: scale(1.03);
 }
 
-/* 
-=============================
-Individual recipe page styles
-=============================
+/*
+=================
+Recipe Detail Page
+=================
 */
 
 .recipe-pages-layout {
@@ -243,6 +263,7 @@ aside {
     text-align: left;
 }
 
+/* Step sidebar links */
 .steps-links > h2 {
     margin-bottom: 0.75rem;
 }
@@ -271,6 +292,7 @@ aside {
     transform: translateX(2px);
 }
 
+/* Dark mode sidebar link tones */
 @media (prefers-color-scheme: dark) {
     .steps-links a {
         color: var(--off-white);
@@ -282,11 +304,12 @@ aside {
     }
 }
 
+/* Recipe hero area */
 .hero-image {
     width: auto;
     height: 400px;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .recipe-details {
@@ -295,21 +318,11 @@ aside {
     gap: 1rem;
 }
 
-.star-rating {
-    display: flex;
-    justify-content: center;
-    gap: 0.375rem;
-}
-
-.star-icon img {
-    width: 25px;
-}
-
 .ingredients-container {
     background-color: var(--card-bg);
     padding: 1.5rem;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 2rem;
 }
 
@@ -335,11 +348,12 @@ aside {
     text-align: left;
 }
 
+/* Reviews */
 .ratings-section {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-content: left;
+    justify-content: flex-start;
+    align-content: flex-start;
     text-align: left;
     gap: 1rem;
 }
@@ -390,7 +404,7 @@ aside {
     background-color: var(--card-bg);
     padding: 1rem;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
@@ -418,8 +432,8 @@ aside {
 
 .rating > span:hover:before,
 .rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
+    content: "\2605";
+    position: absolute;
 }
 
 .rating-display {
@@ -433,9 +447,9 @@ aside {
 }
 
 /*
-===================
-Recipe page styles
-==================
+=================
+Recipes List Page
+=================
 */
 
 .search-filters {
@@ -464,14 +478,13 @@ select {
 }
 
 /*
-===================
-Contact page styles
-==================
+=================
+Contact Page
+=================
 */
 
 .contact-layout {
     display: grid;
-    flex-direction: column;
     grid-template-columns: 1fr 2fr;
     gap: 2rem;
 }
@@ -490,12 +503,11 @@ Contact page styles
 }
 
 .contact-info {
-    display: flexbox;
-    flex-direction: column;
+    display: block;
     background-color: var(--card-bg);
     padding: 1.5rem;
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .contact-form {
@@ -505,9 +517,9 @@ Contact page styles
 }
 
 /*
-================
-Home page styles
-================
+=================
+Home Page
+=================
 */
 
 .hero {
@@ -529,6 +541,12 @@ Home page styles
     width: auto;
     height: 400px;
 }
+
+/*
+=================
+Responsive
+=================
+*/
 
 @media (max-width: 768px) {
     nav {
