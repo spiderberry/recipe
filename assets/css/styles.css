@@ -465,3 +465,15 @@ Home page styles
     width: auto;
     height: 400px;
 }
+
+.theme-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.theme-btn:hover {
+    transform: scale(1.1);
+}
