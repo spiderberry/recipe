@@ -160,6 +160,7 @@ footer {
     transform: scale(1.2);
 }
 
+/*re adjusting png/jpg */
 .hero-section {
     display: flex;
     flex-direction: column;
@@ -170,7 +171,7 @@ footer {
 
 .hero-image {
     max-width: 100%; 
-    width: 500px; /* This makes it a perfect, manageable size */
+    width: 500px;
     height: auto; 
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
