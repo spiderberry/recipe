@@ -459,7 +459,7 @@ Recipe page styles
 select {
     padding: 0.5rem 0.8rem;
     border-radius: 16px;
-    border: none;
+    border: 1px solid #ccc;
     background-color: white;
 }
 
